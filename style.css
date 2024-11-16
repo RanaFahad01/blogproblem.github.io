@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -16,6 +16,7 @@
 
 body {
     font-family: "Figtree";
+    background-color: var(--YELLOW);
     color: var(--GRAY950);
 }
 
@@ -26,12 +27,13 @@ main {
     justify-content: center;
     align-items: center;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .card {
     max-width: 50vw;
-    border: 2px solid blue;
+    background-color: var(--WHITE);
+    border: 1px solid var(--GRAY950);
     border-radius: 15px;
     padding: 1rem;
 
@@ -39,12 +41,15 @@ main {
     flex-direction: column;
     gap: 0.5rem;
 
+    box-shadow: 8px 8px var(--GRAY950);
+
 
 }
 
 img.illustration {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 0.5rem;
 }
 
 p.category {
@@ -54,19 +59,41 @@ p.category {
     padding: 0.2rem 0.45rem;
     border-radius: 3px;
     background-color: var(--YELLOW);
-    /* background-color: rebeccapurple; */
+
+    /* margin-bottom: 0.25rem; */
 }
 
 p.date {
     font-variation-settings: 'wght' 600;
     font-size: small;
+
+    /* margin-bottom: 0.05rem; */
+
 }
 
 p.title {
     font-variation-settings: 'wght' 900;
     font-size: larger;
+    transition: all ease 0.5s;
+
+    margin-bottom: 0.25rem;
+
 }
 
+p.title:hover, p.title:focus {
+    color: var(--YELLOW);
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+p.description {
+    font-size: small;
+    font-variation-settings: 'wght' 600;
+    color: var(--GRAY500);
+
+    margin-bottom: 0.3rem;
+
+}
 
 .identity-card {
     display: flex;
@@ -77,6 +104,11 @@ p.title {
 
 .identity-card img {
     /* display: inline-block; */
-    max-width: 15%;
+    max-width: 12%;
     height: auto;
+}
+
+.identity-card p {
+    font-size: smaller;
+    font-variation-settings: 'wght' 900;
 }
