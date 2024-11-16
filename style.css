@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+:root {
+    --YELLOW: hsl(47, 88%, 63%);
+    --WHITE: hsl(0, 0%, 100%);
+    --GRAY500: hsl(0, 0%, 42%);
+    --GRAY950: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: "Figtree";
+    color: var(--GRAY950);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid green;
+}
+
+.card {
+    max-width: 50vw;
+    border: 2px solid blue;
+    border-radius: 15px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+}
+
+img.illustration {
+    width: 100%;
+    border-radius: 10px;
+}
+
+p.category {
+    font-variation-settings: 'wght' 800;
+    font-size: small;
+    width: fit-content;
+    padding: 0.2rem 0.45rem;
+    border-radius: 3px;
+    background-color: var(--YELLOW);
+    /* background-color: rebeccapurple; */
+}
+
+p.date {
+    font-variation-settings: 'wght' 600;
+    font-size: small;
+}
+
+p.title {
+    font-variation-settings: 'wght' 900;
+    font-size: larger;
+}
+
+
+.identity-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.identity-card img {
+    /* display: inline-block; */
+    max-width: 15%;
+    height: auto;
+}
